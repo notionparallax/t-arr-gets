@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Targets - squeezing vlaue from appraisals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--external resourses-->
+    <script type='text/javascript' src='http://code.jquery.com/jquery-1.10.1.js'></script>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <script type='text/javascript' src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!--bootstrap-->
+    <link type="text/css" rel="stylesheet" href="http:////maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="http:////maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- Font -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,400' rel='stylesheet' type='text/css'>
+    <!--my resourses-->
+    <script type='text/javascript' src='script.js'></script>
+    <link rel="stylesheet" type="text/css" href="simple.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h1>Targets</h1>
+                <div>
+                    <p>To make sure that your targets are written in a way that will give the best chance of something resulting from them, fill in the form below.</p>
+                    <p class="text-info">
+                        <small>Tip: try to make the sentence read as naturally as possible.</small>
+                    </p>
+                </div>
+                <div id="natural" class='friendly'></div>
+            </div>
+
+            <div id="inputs" class="col-xs-12 col-sm-6">
+                <form role="form">
+                    <!-- form labels designed by http://www.kolszewski.com/infield-label.html Very nice!-->
+                    <fieldset>
+                        <legend>Fill in the blanks</legend>
+                        <div class="input-group">
+                            <input type="text" name='targetDescription' placeholder="Describe your target" id="targetDescription" class="form-control"></input>
+                            <label for='targetDescription'>Describe your target</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" name='currentState' placeholder="What is your current condition?" id="currentState" class="form-control"></input>
+                            <label for='currentState'>Describe your target</label>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                End date:
+                            </div>
+                            <div class="col-xs-12 col-sm-6input-group">
+                                <input type="date" name='endDate' value="2015-09-29" placeholder="When will this target be over?" id="endDate" class="form-control"></input>
+                                <label for='endDate'>End Date</label>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" name='helpPerson1' placeholder="Who will help you with this?" id="helpPerson1" class="form-control"></input>
+                            <label for='helpPerson1'>Help Person 1</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" name='helpPerson2' placeholder="Who else will help you with this?" id="helpPerson2" class="form-control"></input>
+                            <label for='helpPerson2'>Help Person 2</label>
+                        </div>
+
+                        <div class="radio-inline">
+                            <span class="faux-label">First check-in</span>
+                            <label class="checkbox-inline"><input type="radio" name="firstCheckinDate" class="timeProportion1" value="a quarter"> <sup>1</sup>&frasl;<sub>4</sub></label>
+                            <label class="checkbox-inline"><input type="radio" name="firstCheckinDate" class="timeProportion1" value="a third"> <sup>1</sup>&frasl;<sub>3</sub></label>
+                            <label class="checkbox-inline"><input type="radio" name="firstCheckinDate" class="timeProportion1" value="half"> <sup>1</sup>&frasl;<sub>2</sub></label>
+                            <span class="faux-label">of the way through.</span>
+                        </div>
+
+                        <div class="radio-inline">
+                            <span class="faux-label">Second check-in</span>
+                            <label class="checkbox-inline"><input type="radio" name="secondCheckinDate" class="timeProportion2" value="half"> <sup>1</sup>&frasl;<sub>2</sub></label>
+                            <label class="checkbox-inline"><input type="radio" name="secondCheckinDate" class="timeProportion2" value="two thirds"> <sup>2</sup>&frasl;<sub>3</sub></label>
+                            <label class="checkbox-inline"><input type="radio" name="secondCheckinDate" class="timeProportion2" value="three quarters"> <sup>3</sup>&frasl;<sub>4</sub></label>
+                            <span class="faux-label">of the way through.</span>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" name='excelentResult' placeholder="Describe an excelent result" id="excelentResult" class="form-control"></input>
+                            <label for='excelentResult'>Describe an excelent result</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" name='adequateResult' placeholder="Describe an adequate result" id="adequateResult" class="form-control"></input>
+                            <label for='adequateResult'>Describe an adequate result</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" name='failResult' placeholder="Describe a result that would be a failure" id="failResult" class="form-control"></input>
+                            <label for='failResult'>Describe a result that would be a failure</label>
+                        </div>
+
+                        <!-- <div id=class="input-group">
+                            <textarea id='special' name='special' rows=6 placeholder="any special requests?"></textarea>
+                            <label for='special'>Any extra comments?</label>
+                        </div> -->
+                        <!-- <button href="#myModal" role="button" data-toggle="modal" type="button" class="btn btn-large btn-primary">send</button> -->
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

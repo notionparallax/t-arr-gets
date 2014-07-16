@@ -32,7 +32,7 @@ $(document).ready(function () {
             +" of the way through the period.</p><p>An excellent result would be "
             +"<span class='cloze' title='excelentResult'>"+ excelentResult +"</span>"
             +", an adequate result would be "
-            +"<span class='cloze' title='adequateresult'>"+ adequateresult +"</span>"
+            +"<span class='cloze' title='adequateResult'>"+ adequateResult +"</span>"
             +" and I would consider it a failure if "
             +"<span class='cloze' title='failResult'>"+ failResult +"</span>"
             +".</p>";
@@ -94,8 +94,9 @@ var submitForm = function (emailString) {
     $("#excelentResult").keyup(function(){
         excelentResult = $(this).val();
     });
-    $("#adequateresult").keyup(function(){
-        adequateresult = $(this).val();
+    $("#adequateResult").keyup(function(){
+        adequateResult = $(this).val();
+        console.log($(this).val());
     });
     $("#failResult").keyup(function(){
         failResult = $(this).val();
